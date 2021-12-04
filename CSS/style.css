@@ -33,24 +33,19 @@ body {
 
 /* Buttons */
 
-.btn {
-    display: inline-block;
-    padding: .1.5em 1.5em;
-    background: var(--clr-light);
-    color: var(--clr-dark);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
-}
+    .button {
+        background-color: #18b81e;
+        border: none;
+        color: rgb(87, 17, 17);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
 
-.btn:hover {
-    transform: scale(1.1);
-    
-}
 /* Typography */
 
 h1,
