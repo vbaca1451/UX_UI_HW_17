@@ -1,0 +1,86 @@
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Custom Properties, update these for your own design*/
+
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary:'Source Code Pro', monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 500;
+  
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 1.25rem;
+    --fs-body: 1rem;
+
+
+/* General styles */
+
+body {
+   background: var(--clr-light);
+   color: var(--clr-dark);
+
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: .1.5em 1.5em;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    
+}
+/* Typography */
+
+h1,
+h2 {
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+
+/* About Me */
+
+    .about-me {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+        .section__title--about {
+            grid-area: title;
+        }
+        
+        .section__subtitle--about {
+            grid-column: 1 / -1;
+            grid-row: 2;
+            position: relative;
+            left: -1em;
+            width: calc(100% + 2em);
+            padding-left: 1em;
+            padding-right: calc(200px + 4em);
+        }
+        
+      

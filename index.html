@@ -4,11 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>Navbar with logo</title>
+        <link rel="stylesheet" href="css/style.css">
    <style>
        body{
            margin: 0;
            padding: 0;
-           background: gray;
+           background: rgb(209, 208, 208);
        }
        nav{
            width: 100%;
@@ -38,15 +39,17 @@
         text-align:center;
     }
     nav a:hover {
-        background:purple;
+        background:rgb(78, 38, 172);
         transition: 0.5s;
         text-transform: uppercase;
     }
+    
    </style> 
+  
 </head>
+
  <body>
-    <div class ="logo"><a href ="#"><img src ="vb_logo.png"></a>
-    </div> 
+   
     <nav>
         <ul>
             <li><<a href ="#"> About</a></li>
@@ -54,13 +57,40 @@
             <li><<a href ="#"> Work</a></li>
             <li><<a href ="#"> Contact</a></li>
         </ul>
-  
-      </nav>
-     
+      </nav>   
  </body>      
 
-        
-   
 
-   
+<!--About me-->
+<section class="about-me" id="about">
+    <h1 class="section__title section__title--about">
+        Hello, I am <strong>Veronica Baca</strong></h1>
+        <p class="section__subtitle section__subtitle--intro"><strong>UX/UI Designer</strong></p>
+    <h2 class="section__title section__title--about">About Me</h2>
+    <p class="section__subtitle section__subtitle--about"></p>
+    <img src="vb_gallery.jpeg" alt="Veronica Baca" class="about-me__img">
+    
+
+    <div class="about-me__body">
+        <p>
+            I am a product and instructional designer in Texas. I’m currently working full-time as an instructional designer for Texas State Technical College, a technical and innovative community college.  
+            My focus as a designer is to understand my users, their needs, and create solutions and positive experiences that connect to their goals. 
+            I’m passionate about technology, books, and living life to its fullest!
+        </p>
+        </div>
+      
+        
+</section>
+<a href="#resume" class="btn">My Resume</a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- replace with your own email address -->
+    <a href="mailto:vbaca1451@gmail.com" class="footer__link">Contact vbaca1451@gmail.com</a>
+
+
+        
+    </ul>
+</footer>
+</body>
 </html>
