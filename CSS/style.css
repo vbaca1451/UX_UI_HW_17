@@ -1,81 +1,75 @@
 
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-/* Custom Properties, update these for your own design*/
-
-:root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
-  --ff-secondary:'Source Code Pro', monospace;
-
-  --fw-reg: 300;
-  --fw-bold: 500;
-  
-  --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #16e0bd;
-    
-    --fs-h1: 3rem;
-    --fs-h2: 1.25rem;
-    --fs-body: 1rem;
-
-
-/* General styles */
-
+<style>
 body {
-   background: var(--clr-light);
-   color: var(--clr-dark);
-
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-/* Buttons */
-
-    .button {
-        background-color: #18b81e;
-        border: none;
-        color: rgb(87, 17, 17);
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-
-/* Typography */
-
-h1,
-h2 {
-    line-height: 1.1;
-    margin: 0;
+html {
+  box-sizing: border-box;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-/* About Me */
+.column {
+  float: center;
+  width: 45.3%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
 
-    .about-me {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    
-        .section__title--about {
-            grid-area: title;
-        }
-        
-        .section__subtitle--about {
-            grid-column: 1 / -1;
-            grid-row: 2;
-            position: relative;
-            left: -1em;
-            width: calc(100% + 2em);
-            padding-left: 1em;
-            padding-right: calc(200px + 4em);
-        }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+ 
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
         
       
